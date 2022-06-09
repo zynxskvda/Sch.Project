@@ -1,5 +1,5 @@
 import random, string
-numb = a
+numb = 'a'
 chars = ''
 if input("include alphabet (y): "):
 	chars += 'abcdefghijklmopqrstuvwxyz'
@@ -9,8 +9,8 @@ if input("include numbers (y): "):
 	chars += '0123456789'
 if input("include special characters (y): "):
 	chars += '+-*/-\\\"\'!@#$%^&(){}[]'
-while !numb.isnumeric():
+while not (numb.isnumeric()):
 	numb = input("zadej číslo: ")
 for _ in range(10):
-	print(''.join(random.choice(chars) for _ in range(numb)))
-readKey()
+	print(''.join(random.choice(chars) for _ in range(int(numb))))
+input()
